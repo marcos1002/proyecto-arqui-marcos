@@ -1,0 +1,149 @@
+@import "./bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Heebo:800&display=swap');
+
+
+$light-color: #f8f9fa;
+$main-color: #0A3F73;
+
+body {
+  background-color: $light-color;
+  height: 100%;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+  font-family: 'Heebo', sans-serif;
+  color: $light-color !important;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+  box-shadow: 0 0 15px #333;
+}
+
+.navbar-light {
+  background-color: $main-color;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $main-color;
+  color: $light-color;
+  text-align: center;
+  line-height: 3em;
+  font-weight: 500;
+}
+
+.form-container {
+  width: 70%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.form-label {
+  width: 130px;
+}
+
+.form-control {
+  width: calc(100% - 130px - 100px) !important;
+  margin-right: 10px;
+}
+
+.loader {
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    margin: 6px;
+    border: 6px solid #999;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #999 transparent transparent transparent;
+  }
+
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.error {
+  font-size: 2em;
+  color: #f00;
+}
+
+.weather-info {
+  .city-name {
+    font-size: 1.3em;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .temp {
+    font-size: 2em;
+    font-weight: 500;
+    color: $main-color;
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .icon {
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .flag {
+    display: inline-block;
+  }
+
+  width: 70%;
+  height: 60%;
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  background-color: #DFF2FA;
+}
